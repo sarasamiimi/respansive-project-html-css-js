@@ -1,0 +1,4103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Work Sans";
+    text-decoration: none;
+    list-style: none;
+}
+
+  
+
+
+header>div{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #55328b;
+    font-weight: 400;
+   letter-spacing: 2px;
+   background-color: #f9f1f2;
+
+}
+
+.sec{
+    background-image: url(img/hero-header-bakery\ \(1\).jpg);
+    width: 100%;
+    height: 700px;;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 135%;  
+    
+
+
+
+    
+    
+}
+
+.nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav>img{
+ width: 139px;
+ height: 96px;
+ border-style: none;
+ max-width: 100%;
+ height: auto;
+ margin-left: 10px;
+ margin-top: 10px;
+
+
+}
+.ul>li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 12px;
+    color: #55328b;
+    font-weight: bold;
+    position: relative;
+    
+    
+
+}
+
+
+
+
+.ul>li:hover:after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #55328b;
+    display: block;
+     margin-top: -30px;
+     opacity: 0;
+     transition: .5s;
+     animation: anime  .5s forwards ;
+     
+
+
+}
+
+@keyframes anime{
+   
+    
+
+    to{
+        position: absolute;
+        margin-top: 10px;
+        opacity: 1;
+
+    }
+}
+
+
+.content
+{
+  
+  position:absolute;
+  min-width:120px;
+  z-index:1;
+  border-radius: 5px;
+  display: none;
+  top: 15px;
+
+
+  
+  
+}
+.content a{
+  display:block;
+  float:none;
+  background-color:white;
+  text-decoration:none;
+  text-align:left;
+  padding:14px 16px;
+  color:#55328b;
+ 
+border-radius: 5px;
+  
+}
+.ul>li:hover .content
+{
+  display:block;
+}
+
+
+
+
+
+
+
+
+
+.ex{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display:none ;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 11;
+
+ 
+    
+
+
+}
+
+.ex>input[type=text]{
+    width: 90%;
+    height: 50px;
+    margin-left: 20px;
+    font-size: large;
+    margin-top: 10px;
+   
+
+
+}
+.ex>input[type=password]{
+    width: 90%;
+    height: 50px;
+    margin-left: 20px;
+    font-size: large;
+    margin-top: 10px;
+   
+
+
+}
+.ex>input:focus{
+
+outline-style: none;
+
+
+}
+
+.ex>span{
+    margin-left: 5px;
+}
+.ex>input[type=checkbox]{
+  
+margin-left: 20px;
+margin-top: 10px;
+color: rgba(240, 234, 234, 0.336);
+
+   
+
+
+}
+.ex>button:nth-of-type(1){
+    margin-top: 80px;
+    margin-left: 200px;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #55328b;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+
+
+
+}
+
+
+.ex>button:nth-of-type(2){
+    margin-top: px;
+    margin-left: 200px;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    background-color: white;
+    color: #55328b;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.acc{
+    display: inline-block;
+    position: relative;
+
+    
+
+
+}
+.acc>li{
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    color: #55328b;
+    font-weight: bold;
+    
+    
+
+
+}
+.bx-basket{
+    font-size: 30px;
+    margin-right: 10px;
+    color: #55328b;
+    font-weight: bold;
+
+}
+
+
+
+.acc>li:hover:after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background: #55328b;
+    display: block;
+     margin-top: -30px;
+     opacity: 0;
+     transition: .5s;
+     animation: anime  .5s forwards ;
+     position: absolute;
+     
+
+
+}
+
+.acc>i:hover:after{
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: #55328b;
+    display: block;
+     margin-top: -30px;
+     opacity: 0;
+     transition: .5s;
+     animation: anime  .5s forwards ;
+     position: absolute;
+     top: 20px;
+     
+
+
+}
+
+
+.acc>li:hover .ex{
+    display: block;
+    
+}
+
+
+.nav1{
+    background-color: white;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    transition: .2s;
+
+}
+
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.part{
+  
+    width: 24%;
+    height: 439px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 100px;
+
+
+}
+.part>h2{
+    font-size: 12px;
+    color: #67637193;
+    text-align: center;
+    
+}
+
+.part>h6{
+    font-size: 56px;
+    color: #55328b;
+    text-align: center;
+
+}
+
+.part>p{
+    font-size: 16px;
+    color: #676371;
+    line-height: 30px;
+    word-spacing: 2px;
+    text-align: center;
+
+
+}
+
+
+.part>button{
+    width: 150px;
+    height: 35px;
+    outline-style: none;
+    background-color: white;
+    color: #55328b;
+    border: none;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: .5s;
+
+
+}
+
+.part>button:hover{
+    background-color: #55328b;
+    color: whitesmoke;
+}
+
+
+
+.fa-bars{
+    font-size: 20px;
+    display: none;
+    opacity: 0;
+}
+
+
+   .art{
+      
+    width: 100%;
+    height: 300px;
+     z-index: 10;
+    display: none;
+
+   }
+
+  
+  .art>ul{
+      width: 100%;
+      height: 300px;
+      cursor: pointer;
+      z-index: 10;
+      margin-top: 10px;
+      
+  }
+
+  .art>ul>li{
+      width: 100%;
+      height: 30px;
+      background-color: white;
+      margin-left: 5px;
+      color: #55328b;
+      z-index: 10;
+
+      
+  }
+
+.show{
+    display: block;
+    
+}
+
+
+    .fa-times{
+        transform:rotate(180deg);
+    }
+
+.part2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.txt{
+    width: 30%;
+    height: 700px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part2>div:nth-of-type(2){
+    width: 70%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.txt>h6{
+    font-size: 12px;
+    color: #676371;
+    margin-left: 100px;
+    margin-top: 100px;
+
+}
+
+
+.txt>h2{
+    
+    font-size: 36px;
+    color: #55328b;
+    text-align: center;
+    margin-bottom: 200px;
+    margin-left: 20px;
+
+
+}
+
+.txt>button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #55328b;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: -300px;
+    margin-left: 50px;
+     transition: .5s;
+     
+
+}
+
+.txt>button:hover{
+    background-color: whitesmoke;
+    color: #55328b;
+}
+
+.slider{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider>article{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    overflow: auto;
+    
+
+
+}
+
+.slider>article::-webkit-scrollbar {
+  display: none;
+}
+
+article>figure{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+   position: relative;
+   transition: 2s;
+  
+
+}
+
+article>figure::before{
+    content: '';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background-color: #5a53538f;
+    display: none;
+    transition: 2s;
+     
+
+}
+
+article>figure:hover::before{
+    display: block;
+}
+
+
+article>figure:nth-of-type(1){
+    
+    
+    
+    margin-left: 35px;
+
+}
+article>figure:nth-of-type(2){
+    
+    
+   
+    margin-left:35px;
+
+
+}
+article>figure:nth-of-type(3){
+    
+    margin-left:55px;
+    
+
+
+}
+
+article>figure:nth-of-type(4){
+    
+    margin-right: 40px;
+    margin-left:55px;
+    
+
+}
+article>figure>h2{
+    position: absolute;
+    font-size: 25px;
+    color: whitesmoke;
+    top: 100px;
+     left: 50px;
+    z-index: 1;
+    text-align: center;
+    display: none;
+       
+}
+
+article>figure:hover>h2{
+        
+    display: block;
+}
+
+article>figure:hover>p{
+        
+    display: block;
+}
+
+article>figure:hover>h4{
+        
+    display: block;
+}
+
+
+article>figure>p{
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+    color: whitesmoke;
+    top: 150px;
+     left: 110px;
+    z-index: 1;
+    text-align: center;
+    display: none;
+}
+
+article>figure>h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 25px;
+    color: whitesmoke;
+    top: 180px;
+     left: 80px;
+    z-index: 1;
+    text-align: center;
+    display: none;
+}
+
+article>figure>img{
+    overflow: hidden !important;
+
+}
+
+#left{
+    width: 40px;
+    height: 40px;
+    background-color: #676371;
+    position: absolute;
+    right: 800px;
+    top: 350px;
+    
+
+   
+
+}
+
+
+#left>i{
+    font-size: 40px;
+    text-align: center;
+    
+
+}
+
+#right{
+
+    width: 40px;
+    height: 40px;
+    background-color: #676371;
+    position: absolute;
+    left: 800px;
+    top: 350px;
+    
+
+
+}
+
+
+#right>i{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.photo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.photo>span{
+    width: 100%;
+    height: 200px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.photo>span>h6{
+    font-size: 12px;
+    color: #676371;
+    width: 100%;
+    margin-top: 40px;
+     text-align: center;
+       
+}
+
+.photo>span>h2{
+    font-size: 40px;
+    color: #55328b;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.photo>article{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.photo>article>div{
+    width: 50%;
+    height: 800px;
+    background-image: url(img/corporate-bg.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1s;
+    background-position: -150px;
+
+}
+
+.photo>article>div>h6{
+    width: 200%;
+    font-size: 20px;
+    color: #f9f1f2;
+    text-align: center;
+   margin-top: 200px;
+   display: none;
+   transition: 1s;
+
+
+}
+
+.photo>article>div:hover>h2{
+    display: block;
+}
+
+.photo>article>div:hover{
+   background-image: url(img/corporate-hover-bg\ \(1\).jpg);
+   object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.photo>article>div>h2{
+    width: 100%;
+    font-size:40px;
+    color:whitesmoke;
+    text-align: center;
+     margin-bottom: 400px;
+     display: none;
+      transition: 1s;
+}
+
+.photo>article>div:hover>h6{
+    display: block;
+}
+
+.photo>article>div>button{
+    width: 150px;
+    height: 50px;
+    background-color: #55328b;
+    color: #f9f1f2;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: -750px;
+     display: none;
+     transition: 1s;
+    
+}
+.photo>article>div>button:hover{
+    background-color: #f9f1f2;
+    color: #55328b;
+}
+
+.photo>article>span>button:hover{
+    background-color: #f9f1f2;
+    color: #55328b;
+}
+.photo>article>div:hover>button{
+    display: block;
+}
+.photo>article>span{
+    width: 50%;
+    height: 800px;
+   background-image: url(img/wedding-bg.jpg);
+   object-fit: cover;
+   background-repeat: no-repeat;
+   background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-position: -100px;
+    transition: 1s;
+
+}
+
+.photo>article>span:hover{
+    background-image: url(img/wedding-hover-bg\ \(1\).jpg);
+    object-fit: cover;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+ 
+ }
+
+.photo>article>span>h6{
+    width: 200%;
+    font-size: 20px;
+    color: #f9f1f2;
+    text-align: center;
+   margin-top: 200px;
+   display: none;
+   transition: 1s;
+   
+
+}
+
+.photo>article>span:hover>h2{
+    display: block;
+}
+
+.photo>article>span>h2{
+    width: 100%;
+    font-size:40px;
+    color: #f9f1f2;
+    text-align: center;
+     margin-bottom: 400px;
+     display: none;
+      transition: 1s;
+}
+
+.photo>article>span:hover>h6{
+    display: block;
+}
+
+.photo>article>span>button{
+    width: 150px;
+    height: 50px;
+    background-color: #55328b;
+    color: #f9f1f2;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: -750px;
+     display: none;
+     transition: 1s;
+    
+}
+
+.photo>article>span:hover>button{
+    display: block;
+}
+
+
+.slider2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+.box{
+    width: 30%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.box>span{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+.box>span>h2{
+    width: 100%;
+    color: #55328b;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+   
+}
+
+.box>span>h6{
+    width: 100%;
+    color: #676371;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -80px;
+   
+}
+
+.box>span>button{
+    width: 150px;
+    height: 50px;
+    background-color: #55328b;
+    color: #f9f1f2;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+    transition: 1s;
+
+     
+}
+
+
+.box>span>button:hover{
+    background-color: #f9f1f2;
+    color: #55328b;
+}
+
+
+.box>button:hover{
+    background-color: #f9f1f2;
+    color: #55328b;
+}
+
+.slider2>span{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+
+}
+
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  
+    
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+   
+
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+    
+    
+    
+  }
+.product-image::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #42404681;
+    display: none;
+    
+}
+
+.product-image:hover::before{
+    display: block;
+}
+
+.product-image>h6{
+    font-size: 17px;
+    color: #3f3d44;
+    position: absolute;
+    top: 150px;
+    word-spacing: 10px;
+    display: none;
+
+}
+
+.product-image:hover>h6{
+    display: block;
+}
+
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    text-align: center;
+
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  .card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+  .card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+  }
+  
+  
+  .product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }
+  
+  .product-brand {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    color: #55328b;
+
+  }
+  
+  .product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 5px;
+    color: #55328b;
+
+  }
+  
+  .price {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+
+  .box1{
+      width: 100%;
+      height: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
+  }
+  .box1>div{
+      width: 90%;
+      height: 600px;
+      background-image: url(img/bakery-process-1\ \(5\).jpg);
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 10%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: flex-end;
+    
+
+    
+
+  }
+
+  .box1>div::before{
+      content: '';
+      display: block;
+      background-color: #54328863;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      
+
+  }
+
+  .box1>div>span{
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      
+
+  }
+  .box1>div>span>aside>p{
+      font-size: 96px;
+      color: #f9f1f2;
+      z-index: 100!important;
+      margin-top: 20px;
+
+    }
+
+    .box1>div>span>div{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+      margin-left: 20px;
+     
+
+    }
+
+    .box1>div>span>aside{
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-end; 
+        align-content: flex-start;
+        
+
+        
+
+        
+        
+
+    }
+    .box1>div>span>div>h2{
+        font-size: 56px;
+        font-weight: 400;
+        color: #f9f1f2;
+        z-index: 100 !important;
+        margin-top: 20px;
+        
+
+    }
+
+    .box1>div>article{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+
+
+    }
+
+    .box1>div>article>h6{
+    font-size: 16px;
+    color: #dbd6e9b7;
+    z-index: 300;
+    margin-top: 50px;
+
+    }
+
+    .box1>div>article>p{
+        font-size: 20px;
+        color: #f9f1f2;
+        z-index: 300;
+        line-height: 30px;
+        margin-left: 20px;
+       text-align: center;
+    }
+
+   
+    .box2{
+        width: 100%;
+        height: 800px;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    .box2>div{
+        width: 45%;
+        height: 90%;
+        
+
+    }
+
+      .box2>div:nth-of-type(1){
+          background-image: url(img/bakery-process-2.jpg);
+          object-fit: cover;
+          background-position: -300px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+
+          
+
+
+
+           
+}
+
+.box2>div:nth-of-type(1):before{
+    content: '';
+    display: block;
+    background-color: #54328863;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+
+}
+
+
+
+.box2>div>span{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+
+
+}
+
+.box2>div>span>p{
+    font-size: 96px;
+    color: #f9f1f2;
+    z-index: 1;
+    margin-right: 20px;
+
+   
+}
+
+.box2>div>span>h2{
+    font-size: 76px;
+    color: #f9f1f2;
+    z-index: 1;
+    margin-left: 20px;
+
+
+}
+
+
+.box2>div>aside{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+}
+
+
+
+.box2>div>aside>h6{
+    font-size:16px;
+    color: #3f3d44;
+    z-index: 1;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 30px;
+
+
+
+}
+
+.box2>div>aside>p{
+  
+    font-size: 18px;
+    color: #f9f1f2;
+    line-height: 40px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+.box2>div:nth-of-type(2){
+    background-color: #f3ecedf1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+
+}
+
+.box2>div:nth-of-type(2)>h6{
+    font-size: 16px;
+    color: #3f3d4491;
+    text-align: center;
+    margin-top: 29px;
+
+}
+
+.box2>div:nth-of-type(2)>h2{
+    font-size: 50px;
+    color: #55328b;
+    text-align: center;
+    
+
+}
+
+.box2>div:nth-of-type(2)>p{
+    font-size: 20px;
+    color: #3f3d44a9;
+     margin-right: 350px;
+      margin-bottom: 100px;
+       
+
+}
+
+.box3{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+.box3>div{
+    width: 90%;
+    height: 600px;
+    background-image: url(img/bakery-process-3.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: flex-start;
+
+  
+
+  
+
+}
+
+.box3>div::before{
+    content: '';
+    display: block;
+    background-color: #54328863;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+
+}
+
+.box3>div>span{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    
+
+}
+.box3>div>span>aside>p{
+    font-size: 96px;
+    color: #f9f1f2;
+    z-index: 100!important;
+    margin-top: 20px;
+
+  }
+
+  .box3>div>span>div{
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+    margin-left: 20px;
+      
+
+  }
+
+  .box3>div>span>aside{
+      width: 55%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:flex-end; 
+      align-content: flex-start;
+      
+
+      
+
+      
+      
+
+  }
+  .box3>div>span>div>h2{
+      font-size: 56px;
+      font-weight: 400;
+      color: #f9f1f2;
+      z-index: 100 !important;
+      margin-top: 20px;
+      
+
+  }
+
+  .box3>div>article{
+      width: 40%;
+      height: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+
+
+  }
+
+  .box3>div>article>h6{
+  font-size: 16px;
+  color: #dbd6e9b7;
+  z-index: 300;
+  margin-top: 50px;
+
+  }
+
+  .box3>div>article>p{
+      font-size: 20px;
+      color: #f9f1f2;
+      z-index: 300;
+      line-height: 30px;
+      margin-left: 20px;
+     text-align: center;
+  }
+
+.para{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+    
+}
+
+.para>div{
+    width: 100%;
+    height: 150px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-content: space-around;
+     align-items: center;
+     
+    
+}
+
+.para>div>h6{
+    width: 100%;
+    color: #3f3d44;
+    font-size: 18px;
+    text-align: center;
+}
+
+.para>div>h2{
+    width: 100%;
+    color: #55328b;
+    font-size: 44px;
+    text-align: center;
+}
+
+.para>span{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.para>span>div{
+    width: 45%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+
+.para>span>div>figure{
+    width: 100%;
+    height: 50%;
+    transition: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.para>span>div>figure>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+
+
+}
+
+.para>span>div>figure:hover>img{
+      transform: scale(1.1);
+    
+
+}
+
+.para>span>div>figcaption{
+
+    width: 100%;
+    height: 50%;
+   
+
+
+}
+
+
+.para>span>div>figcaption>div{
+
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;align-items: center;
+
+
+}
+
+.para>span>div>figcaption>div>h2{
+    font-size: 40px;
+    color: #55328b;
+    text-align: center;
+
+}
+
+
+.para>span>div>figcaption>span{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.para>span>div>figcaption>span>div{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+   
+   
+    
+
+}
+
+
+.para>span>div>figcaption>span>div>p{
+    font-size: 15px;
+    color: #3f3d44;
+    text-align: center;
+         margin-left: 20px;
+
+}
+
+.para>span>div>figcaption>span>div>button{
+    width: 140px;
+    height: 44px;
+    color: #55328b;
+    background-color: #f9f1f2;
+    font-size: 15px;
+    margin-right: -20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40px;
+     
+
+}
+.para>span>div>figcaption>span>div>button:hover{
+    color: whitesmoke;
+    background-color: #55328b;
+
+
+
+    
+}
+
+
+.para1{
+    
+    width: 100%;
+    height: auto;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+   
+
+    
+}
+
+.para1>span{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    
+
+
+}
+
+.para1>span>div{
+    width: 24.20%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    
+     
+
+
+
+}
+
+.para1>span>div>span{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.para1>span>div>span>h6{
+    width: 100%;
+    font-size: 12px;
+    color: #3f3d44;
+    text-align: center;
+
+
+}
+
+.para1>span>div>span>button{
+    background-color: #55328b;
+    color: #f2f0f5;
+    border: none;
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 5px;
+    
+
+}
+
+.para1>span>div>span>button:hover{
+
+    background-color: #f8f5fc;
+    color: #55328b;
+    
+}
+
+
+
+.para1>span>div>span>h2{
+    width: 100%;
+    font-size: 56px;
+    color: #55328b;
+    text-align: center;
+    
+
+}
+
+.para3>span>div>span>button{
+    width: 120px;
+    height: 50px;
+    background-color: #55328b;
+    color: #f9f1f2;
+    border: none;
+    font-size: 15px;
+    border-radius:5px;
+    transition: 1s;
+
+
+
+
+
+}
+
+
+.para3>span>div>span>button:hover{
+    background-color: #f2f0f5;
+    color: #55328b;
+    
+}
+
+.para3>span>div>h6{
+    width: 100%;
+    font-size: 12px;
+    color: #d1cddb;
+    text-align: center;
+
+
+}
+
+
+.para3>span>div>h2{
+    width: 100%;
+    font-size: 56px;
+    color: #f8f5fc;
+    text-align: center;
+    
+
+}
+
+.para3>span>div>button{
+    width: 120px;
+    height: 50px;
+    color: #55328b;
+    background-color: #f9f1f2;
+    border: none;
+    font-size: 15px;
+    border-radius:5px;
+    transition: 1s;
+
+
+
+
+
+}
+
+.para3>span>div>button:hover{
+    background-color: #55328b;
+    color: #f9f1f2;
+
+}
+
+
+.para1>span>div:nth-of-type(2){
+    
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-grow: 4;
+    background-color: rgb(187, 206, 212);
+
+
+}
+
+
+.para1>span>div>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.para1>span>div>img:hover{
+
+
+    transform: scale(1.1);
+}
+
+
+.para3{
+    width: 100%;
+    height:500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+   background-color: #f2f0f5;
+    
+    
+}
+
+
+.para3>span{
+    width: 90%;
+    
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   align-items: flex-start;
+  align-content: flex-start;
+background-image: url(img/call-to-action-bg\ \(1\).jpg);
+background-size: cover;
+     
+
+}
+.para3>span>div{
+    width: 80%;
+    height: 80%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:space-around;
+    
+
+
+    
+}
+
+.para4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+
+.para4>div{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+
+
+
+}
+
+.para4>div>span{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    
+
+}
+
+
+.para4>div>span:nth-of-type(1)>img{
+   width: 29%;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+   
+
+    
+
+
+
+
+
+}
+
+.para4>div>span:nth-of-type(1)>ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -100px;
+    color: #55328b;
+    cursor: pointer;
+
+
+}
+
+
+.para4>div>span:nth-of-type(1)>ul>li{
+    display: inline-block;
+    margin-left: 50px;
+
+
+}
+
+.para4>div>span>ul>li:nth-of-type(7){
+    margin-left: 300px;
+
+
+}
+
+.para4>div>span{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    .para3>span{
+        width: 90%;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       align-items: center;
+      align-content: center;
+    background-image: url(img/call-to-action-bg\ \(1\).jpg);
+    background-size: cover;
+         
+    
+    }
+    
+
+.para4>div>span>h3{
+    font-size: 30px;
+    width: 100%;
+    color: #55328b;
+    text-align: center;
+    margin-top: 100px;
+
+
+}
+
+.para4>div>span>input{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.575);
+    margin-left: 20px;
+    margin-bottom: 100px;
+
+
+
+}
+.para4>div>span>button{
+
+    width: 200px;
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #55328b;
+    color: #f2f0f5;
+    margin-left: 20px;
+    margin-bottom: 100px;
+
+
+
+
+}
+
+.para4>div>span>article{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -100px;
+
+
+
+}
+
+
+.para4>div>span>article>a>i{
+      
+    width: 5%;
+    font-size: 30px;
+    margin-right: 20px;
+
+    
+
+}
+
+
+
+
+
+@media screen and (max-width:576px){
+    .ul{
+        display: none;
+    }
+    .sec{
+        background-size: cover;
+    }
+
+    .part{
+        width: 70%;
+        height: 439px;
+    }
+    .part>h2{
+        font-size: 12px;
+        color: #67637193;
+        text-align: center;
+        
+    }
+    .fa-bars{
+        display: block;
+        opacity: 1;
+    }
+
+    .txt{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .part2>div:nth-of-type(2){
+        width: 100%;
+        height: 700px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+    
+    }
+
+    #left{
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        right: 200px;
+        top: 350px;
+        z-index: 1;
+    
+       
+    
+    }
+
+    #right{
+
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        left: 200px;
+        top: 350px;
+        z-index: 1;
+    
+    
+    }
+
+
+    .photo>article>span{
+        width: 60%;
+        height: 400px;
+       background-image: url(img/wedding-bg.jpg);
+       object-fit: cover;
+       background-repeat: no-repeat;
+       background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+        transition: 1s;
+    
+    }
+
+
+    .photo>article>div{
+        width: 60%;
+        height: 400px;
+        background-image: url(img/corporate-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: 1s;
+        margin-top: 50px;
+    
+    }
+
+    .box{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    .slider2>span{
+        width: 100%;
+        height: auto;
+        background-color: #eeecec;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+
+    .box1>div>article{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+
+
+    }
+
+    .box1>div>span>div>h2{
+        font-size: 36px;
+        font-weight: 400;
+        color: #f9f1f2;
+        z-index: 100 !important;
+        margin-top: 20px;
+        
+
+    }
+
+    .box2>div{
+        width: 100%;
+        height: 90%;
+      
+
+    }
+     
+    .box2{
+        width: 100%;
+        height: auto;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+    }
+    .box2>div:nth-of-type(1){
+        background-image: url(img/bakery-process-2.jpg);
+        object-fit: cover;
+       background-size: 200%;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+}
+
+.box2>div>aside>p{
+  
+    font-size: 14px;
+    color: #f9f1f2;
+    line-height: 40px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 20px;
+
+}
+.box3>div>article{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+
+}
+
+.box3>div>span>div>h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #f9f1f2;
+    z-index: 100 !important;
+    margin-top: 20px;
+    
+
+}
+
+.para>span>div{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+
+.para1{
+    
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+ 
+}
+
+
+.para1>span>div{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    
+     
+
+
+
+}
+
+.para3>span{
+    width: 100%;
+    height:90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+     
+
+}
+
+.para3>span{
+    width: 100%;
+    height:90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+     
+
+}
+
+.para4>div>span{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    
+
+}
+.para3>span{
+    width: 90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
+  align-content: center;
+background-image: url(img/call-to-action-bg\ \(1\).jpg);
+background-size: cover;
+     
+
+}
+    
+}
+/* end sm mobile */
+
+@media screen and (min-width:577px){
+    .ul{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+        opacity: 1;
+    }
+
+    .sec{
+        background-size: cover;
+    }
+
+    .part{
+        width: 50%;
+        height: 439px;
+    }
+    .part>h2{
+        font-size: 10px;
+        color: #67637193;
+        text-align: center;
+        
+    }
+
+    article>figure{
+        width: 120%;
+
+        
+        
+    }
+
+    .txt{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .part2>div:nth-of-type(2){
+        width: 100%;
+        height: 700px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+    
+    }
+
+    #left{
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        right: 600px;
+        top: 350px;
+        z-index: 1;
+    
+       
+    
+    }
+
+    #right{
+
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        left: 600px;
+        top: 350px;
+        z-index: 1;
+    
+    
+    }
+
+    .photo>article>span{
+        width: 45%;
+        height: 500px;
+       background-image: url(img/wedding-bg.jpg);
+       object-fit: cover;
+       background-repeat: no-repeat;
+       background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        transition: 1s;
+    
+    }
+
+
+    .photo>article>div{
+        width: 45%;
+        height: 500px;
+        background-image: url(img/corporate-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        transition: 1s;
+        margin-top: 50px;
+        
+    
+    }
+
+    
+    .box>h2{
+        width: 100%;
+        color: #55328b;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 90px;
+    }
+    
+    .box>h6{
+        width: 100%;
+        color: #676371;
+        font-size: 15px;
+        text-align: center;
+       
+    }
+    
+    .box>button{
+        width: 150px;
+        height: 50px;
+        background-color: #55328b;
+        color: #f9f1f2;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-left: 100px;
+    
+    }
+    .box{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .slider2>span{
+        width: 100%;
+        height: auto;
+        background-color: #eeecec;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+
+    .box1>div>article{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+
+
+    }
+
+
+    .box1>div>span>div>h2{
+        font-size: 46px;
+        font-weight: 400;
+        color: #f9f1f2;
+        z-index: 100 !important;
+        margin-top: 20px;
+        
+
+    }
+
+    .box2>div{
+        width: 100%;
+        height: 90%;
+    
+
+    }
+
+
+   
+    .box2{
+        width: 100%;
+        height: auto;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+    }
+
+
+  .box2>div:nth-of-type(1){
+          background-image: url(img/bakery-process-2.jpg);
+          object-fit: cover;
+          background-repeat: no-repeat;
+          background-size:200%;
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+
+          
+
+
+
+           
+}
+
+
+.box2>div:nth-of-type(1){
+    background-image: url(img/bakery-process-2.jpg);
+    object-fit: cover;
+   
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.box2>div:nth-of-type(1){
+    background-image: url(img/bakery-process-2.jpg);
+    object-fit: cover;
+   background-size: 200%;
+    background-repeat: no-repeat;
+    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.box2>div>aside>p{
+  
+    font-size: 14px;
+    color: #f9f1f2;
+    line-height: 40px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+.box3>div>article{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+
+}
+
+.box3>div>span>div>h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #f9f1f2;
+    z-index: 100 !important;
+    margin-top: 20px;
+    
+
+}
+
+.para>span>div{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+
+.para1{
+    
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+
+.para1>span>div{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    
+     
+
+
+
+}
+
+.para3>span{
+    width: 100%;
+    height:90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     
+
+}
+
+.para4>div>span:nth-of-type(1)>ul>li{
+    display: inline-block;
+    margin-left: 40px;
+
+
+}
+
+.para4>div>span{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    
+
+}
+
+.para3>span{
+    width: 90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
+  align-content: center;
+background-image: url(img/call-to-action-bg\ \(1\).jpg);
+background-size: cover;
+     
+
+}
+}
+/* end big mobile */
+
+@media screen and (min-width:768px){
+    .ul{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+        opacity: 1;
+    }
+
+    .sec{
+        background-size: cover;
+    }
+
+    .part{
+        width: 40%;
+    height: 439px;
+    }
+
+
+    article>figure{
+        width: 80%;
+
+        
+        
+    }
+
+    .txt{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .part2>div:nth-of-type(2){
+        width: 100%;
+        height: 700px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+    
+    }
+
+
+    #left{
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        right: 700px;
+        top: 350px;
+        z-index: 1;
+    
+       
+    
+    }
+
+    #right{
+
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        left: 700px;
+        top: 350px;
+        z-index: 1;
+    
+    
+    }
+
+    .photo>article>div{
+        width: 45%;
+        height: 800px;
+        background-image: url(img/corporate-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: 1s;
+        background-position: -150px;
+    
+    }
+
+    .photo>article>span{
+        width: 45%;
+        height: 800px;
+       background-image: url(img/wedding-bg.jpg);
+       object-fit: cover;
+       background-repeat: no-repeat;
+       background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-position: -100px;
+        transition: 1s;
+    
+    }
+
+    .box{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .slider2>span{
+        width: 100%;
+        height: auto;
+        background-color: #eeecec;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+    .box1>div>article{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+
+
+    }
+
+
+    .box1>div>span>div>h2{
+        font-size: 56px;
+        font-weight: 400;
+        color: #f9f1f2;
+        z-index: 100 !important;
+        margin-top: 20px;
+        
+
+    }
+
+
+    .box2>div:nth-of-type(2)>h6{
+        font-size: 16px;
+        color: #3f3d4491;
+        text-align: center;
+        margin-top: 29px;
+    
+    }
+    
+    .box2>div:nth-of-type(2)>h2{
+        font-size: 50px;
+        color: #55328b;
+        text-align: center;
+        
+    
+    }
+    
+    .box2>div:nth-of-type(2)>p{
+        font-size: 20px;
+        color: #3f3d44a9;
+         margin-right: 350px;
+          margin-bottom: 100px;
+           
+    }
+
+    .box2>div{
+        width: 100%;
+        height: 90%;
+       
+
+    }
+
+    
+    .box2{
+        width: 100%;
+        height: auto;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    .box2>div:nth-of-type(1){
+        background-image: url(img/bakery-process-2.jpg);
+        object-fit: cover;
+        background-size: 300%;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+                          
+        
+}
+
+.box2>div>aside>p{
+  
+    font-size: 14px;
+    color: #f9f1f2;
+    line-height: 40px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+.box3>div>article{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+
+}
+
+
+.box3>div>span>div>h2{
+    font-size: 56px;
+    font-weight: 400;
+    color: #f9f1f2;
+    z-index: 100 !important;
+    margin-top: 20px;
+    
+
+}
+
+.para>span>div{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+
+.para>span>div{
+    width: 45%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+.para>span>div{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+
+.para1{
+    
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.para1>span>div{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    
+     
+
+
+
+}
+.para4>div>span{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    
+
+}
+
+}
+/* end tablet */
+
+@media screen and (min-width:992px){
+    .ul{
+        display: flex;
+    }
+
+    .sec{
+        background-size: cover;
+    }
+    .part{
+    width: 30%;
+    height: 439px;
+    }
+
+    .fa-bars{
+        display: none;
+        opacity: 0;
+    }
+    
+    article>figure{
+        width: 70%;
+
+
+        
+    }
+
+    .txt{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .part2>div:nth-of-type(2){
+        width: 70%;
+        height: 700px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+    
+    }
+
+    #left{
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        right: 600px;
+        top: 350px;
+        z-index: 1;
+    
+       
+    
+    }
+
+    #right{
+
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        left: 600px;
+        top: 350px;
+        z-index: 1;
+    
+    
+    }
+
+    .photo>article>div{
+        width: 45%;
+        height: 600px;
+        background-image: url(img/corporate-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: 1s;
+        background-position: -150px;
+    
+    }
+
+    .photo>article>span{
+        width: 45%;
+        height: 600px;
+       background-image: url(img/wedding-bg.jpg);
+       object-fit: cover;
+       background-repeat: no-repeat;
+       background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-position: -100px;
+        transition: 1s;
+    
+    }
+    .box{
+        width:100%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .slider2>span{
+        width: 100%;
+        height: auto;
+        background-color: #eeecec;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        
+    }
+    .box1>div>span>div>h2{
+        font-size: 56px;
+        font-weight: 400;
+        color: #f9f1f2;
+        z-index: 100 !important;
+        margin-top: 20px;
+        
+
+    }
+
+    .box2>div:nth-of-type(2)>h6{
+        font-size: 16px;
+        color: #3f3d4491;
+        text-align: center;
+        margin-top: 29px;
+    
+    }
+    
+    .box2>div:nth-of-type(2)>h2{
+        font-size: 40px;
+        color: #55328b;
+        text-align: center;
+        
+    
+    }
+    
+    .box2>div:nth-of-type(2)>p{
+        font-size: 20px;
+        color: #3f3d44a9;
+         
+          margin-bottom: 100px;
+          
+           
+    
+    }
+
+    .box2>div{
+        width: 45%;
+        height: 90%;
+       
+
+    }
+
+    
+    .box2{
+        width: 100%;
+        height: 800px;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    
+
+        
+    .box2>div:nth-of-type(1){
+        background-image: url(img/bakery-process-2.jpg);
+        object-fit: cover;
+       background-size: 200%;
+        background-repeat: no-repeat;
+         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+}
+
+
+.box2>div>aside>p{
+  
+    font-size: 18px;
+    color: #f9f1f2;
+    line-height: 40px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+.box3>div>span>div>h2{
+    font-size: 56px;
+    font-weight: 400;
+    color: #f9f1f2;
+    z-index: 100 !important;
+    margin-top: 20px;
+    
+
+}
+
+.para>span>div>figcaption>span>div>button{
+    width: 140px;
+    height: 44px;
+    color: #f9f1f2;
+    background-color: #55328b;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: -1px;
+    
+     
+
+}
+
+.para>span>div{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+
+.para1{
+    
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  
+}
+
+.para1>span>div{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    
+     
+
+
+
+}
+
+.para3>span{
+    width: 100%;
+    height:90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+     
+
+}
+
+.para3>span{
+    width: 90%;
+    height:90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     
+
+}
+
+
+.para4>div>span:nth-of-type(1)>ul>li{
+    display: inline-block;
+    margin-left: 50px;
+
+
+}
+
+.para3>span{
+    width: 90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   align-items: flex-start;
+  align-content: flex-start;
+background-image: url(img/call-to-action-bg\ \(1\).jpg);
+background-size: cover;
+     
+
+}
+
+}
+/* end desktop */
+
+@media screen and (min-width:1200px){
+      
+    .ul{
+        display: flex;
+    }
+
+    .part{
+        width: 24%;
+    height: 439px;
+    }
+
+    .fa-bars{
+        display: none;
+        opacity: 0;
+    }
+
+    .part2>div:nth-of-type(2){
+        width: 70%;
+        height: 700px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+    
+    }
+
+    #left{
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        right: 800px;
+        top: 350px;
+        z-index: 1;
+    
+       
+    
+    }
+
+    #right{
+
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        left: 800px;
+        top: 350px;
+        z-index: 1;
+    
+    
+    }
+
+    .photo>article>div{
+        width: 45%;
+        height: 800px;
+        background-image: url(img/corporate-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: 1s;
+        background-position: -150px;
+    
+    }
+
+    .photo>article>span{
+        width: 45%;
+        height: 800px;
+       background-image: url(img/wedding-bg.jpg);
+       object-fit: cover;
+       background-repeat: no-repeat;
+       background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-position: -100px;
+        transition: 1s;
+    
+    }
+
+    .box{
+        width: 30%;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .slider2>span{
+        width: 70%;
+        height: auto;
+        background-color: #eeecec;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+
+    .box1>div>article{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+
+
+    }
+
+       
+    .box1>div>span>div>h2{
+        font-size: 56px;
+        font-weight: 400;
+        color: #f9f1f2;
+        z-index: 100 !important;
+        margin-top: 20px;
+        
+
+    }
+
+
+
+
+    .box2>div:nth-of-type(2)>h6{
+        font-size: 16px;
+        color: #3f3d4491;
+        text-align: center;
+        margin-top: 29px;
+    
+    }
+    
+    .box2>div:nth-of-type(2)>h2{
+        font-size: 50px;
+        color: #55328b;
+        text-align: center;
+        
+    
+    }
+    
+    .box2>div:nth-of-type(2)>p{
+        font-size: 20px;
+        color: #3f3d44a9;
+         margin-right: 350px;
+          margin-bottom: 100px;
+           
+    
+    }
+
+    
+    .box2>div{
+        width: 45%;
+        height: 90%;
+      
+
+    }
+    
+    .box2{
+        width: 100%;
+        height: 800px;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+
+    }
+
+
+
+    .box2>div:nth-of-type(1){
+        background-image: url(img/bakery-process-2.jpg);
+        object-fit: cover;
+        background-position: -300px;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        
+
+
+
+         
+}
+
+
+.box2>div>aside>p{
+  
+    font-size: 18px;
+    color: #f9f1f2;
+    line-height: 40px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+.box3>div>article{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+
+}
+
+   
+.box3>div>span>div>h2{
+    font-size: 56px;
+    font-weight: 400;
+    color: #f9f1f2;
+    z-index: 100 !important;
+    margin-top: 20px;
+    
+
+}
+
+.para>span>div>figcaption>span>div>button{
+    width: 140px;
+    height: 44px;
+    color: #f9f1f2;
+    background-color: #55328b;
+    font-size: 15px;
+    margin-right: -20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40px;
+     
+
+}
+
+.para>span>div{
+    width: 45%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+
+.para1{
+    
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  
+}
+
+
+.para1>span>div{
+    width: 24.20%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    
+     
+
+    
+
+}
+
+.para3>span{
+    width: 90%;
+    height:90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+     
+
+}
+
+.para4>div>span{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    
+
+}
+
+
+}
+/* end big desktop */
+
+@media screen and (min-width:1400px){
+    
+    .ul{
+        display: flex;
+    }
+    .part{
+        width: 24%;
+    height: 439px;
+    }
+
+    .fa-bars{
+        display: none;
+        opacity: 0;
+    }
+
+    .part2>div:nth-of-type(2){
+        width: 70%;
+        height: 700px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+    
+    }
+    #left{
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        right: 800px;
+        top: 350px;
+        z-index: 1;
+    
+       
+    
+    }
+
+    #right{
+
+        width: 40px;
+        height: 40px;
+        background-color: #676371;
+        position: absolute;
+        left: 800px;
+        top: 350px;
+        z-index: 1;
+    
+    
+    }
+
+    .photo>article>div{
+        width: 45%;
+        height: 800px;
+        background-image: url(img/corporate-bg.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: 1s;
+        background-position: -150px;
+    
+    }
+
+    .photo>article>span{
+        width: 45%;
+        height: 800px;
+       background-image: url(img/wedding-bg.jpg);
+       object-fit: cover;
+       background-repeat: no-repeat;
+       background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-position: -100px;
+        transition: 1s;
+    
+    }
+
+.box{
+    width: 30%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.slider2>span{
+    width: 70%;
+    height: auto;
+    background-color: #eeecec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    align-content: flex-start;
+    
+}
+.box1>div>article{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+
+}
+
+.box1>div>span>div>h2{
+    font-size: 56px;
+    font-weight: 400;
+    color: #f9f1f2;
+    z-index: 100 !important;
+    margin-top: 20px;
+    
+
+}
+
+.box2>div:nth-of-type(2)>h6{
+    font-size: 16px;
+    color: #3f3d4491;
+    text-align: center;
+    margin-top: 29px;
+
+}
+
+.box2>div:nth-of-type(2)>h2{
+    font-size: 50px;
+    color: #55328b;
+    text-align: center;
+    
+
+}
+
+.box2>div:nth-of-type(2)>p{
+    font-size: 20px;
+    color: #3f3d44a9;
+     margin-right: 350px;
+      margin-bottom: 100px;
+       
+
+}
+
+
+  
+.box2{
+    width: 100%;
+    height: 800px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+
+}
+
+
+.box2>div:nth-of-type(1){
+    background-image: url(img/bakery-process-2.jpg);
+    object-fit: cover;
+    background-position: -300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+
+
+
+     
+}
+
+.box2>div>aside>p{
+  
+    font-size: 18px;
+    color: #f9f1f2;
+    line-height: 40px;
+    z-index: 1;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+.box3>div>article{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+
+}
+
+   
+.box3>div>span>div>h2{
+    font-size: 56px;
+    font-weight: 400;
+    color: #f9f1f2;
+    z-index: 100 !important;
+    margin-top: 20px;
+    
+
+}
+
+.para>span>div>figcaption>span>div>button{
+    width: 140px;
+    height: 44px;
+    color: #f9f1f2;
+    background-color: #55328b;
+    font-size: 15px;
+    margin-right: -20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40px;
+     
+
+}
+
+.para>span>div{
+    width: 45%;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    
+
+}
+
+.para1{
+    
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+   
+}
+
+
+
+.para1>span>div{
+    width: 24.20%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    
+     
+
+
+
+}
+
+.para3>span{
+    width: 90%;
+    height:90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+     
+
+}
+
+.para4>div>span:nth-of-type(1)>ul>li{
+    display: inline-block;
+    margin-left: 50px;
+
+
+}
+
+.para4>div>span{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    
+
+}
+
+.para3>span{
+    width: 90%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   align-items: flex-start;
+  align-content: flex-start;
+background-image: url(img/call-to-action-bg\ \(1\).jpg);
+background-size: cover;
+     
+
+}
+
+.para4>div>span{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+/* end xxl */
+
+
+}
